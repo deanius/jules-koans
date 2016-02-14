@@ -1,20 +1,20 @@
 {
-  "name": "rx-roans",
-  "title": "Koans for RxJS",
-  "description": "The Koans walk you along the path to enlightenment in order to learn RxJS.",
+  "name": "jules-koans",
+  "title": "Koans for Jules",
+  "description": "The Koans walk you along the path to enlightenment in order to learn Jules.",
   "version":"0.0.1",
   "maintainers": [
     {
-      "name": "Matthew Podwysocki",
-      "web": "https://github.com/mattpodwysocki"
+      "name": "Dean Radcliffe",
+      "web": "https://github.com/deanius"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Reactive-Extensions/RxJSKoans.git"
+    "url": "https://github.com/deanius/jules-koans.git"
   },
   "bugs": {
-    "url": "https://github.com/Reactive-Extensions/RxJSKoans/issues"
+    "url": "https://github.com/deanius/jules-koans/issues"
   },
   "licenses": [
     {
@@ -24,10 +24,12 @@
   ],
   "dependencies": {
     "mocha": "*",
+    "qunit": "<=0.9.0",
     "mocha-qunit-ui": "*",
     "rx": "*"
   },
   "scripts": {
-    "test": "mocha --ui mocha-qunit-ui -b"
+    "test": "mocha --ui mocha-qunit-ui -b --harmony",
+    "test:watch": "mocha --ui mocha-qunit-ui -b -G --harmony -w"
   }
 }
