@@ -9,4 +9,5 @@ test('Single Stroke Roll', () => {
   $roll.take(4).then(strokes => {
     deepEqual(strokes, ['R', 'L', 'R', 'L'])
   })
+  console.log(['R', 'L', 'R', 'L', 'R', 'L', 'R', 'L'])
 })
